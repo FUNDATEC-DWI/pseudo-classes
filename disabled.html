@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disabled pseudo-class</title>
+  </head>
+  <body>
+    <input type="text" class="my-input" value="input com disabled" disabled />
+    <input type="text" class="my-input" value="input sem disabled" />
+    <style>
+      .my-input {
+        font-size: 30px;
+        outline: none;
+      }
+      .my-input:disabled {
+        border-color: red;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus pseudo-class</title>
+  </head>
+  <body>
+    <a class="my-link" href="#">Link com Focus</a>
+    <input type="text" class="my-input" value="input com Focus" />
+    <button class="my-button">Button com Focus</button>
+    <style>
+      .my-link {
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+      .my-link:focus,
+      .my-input:focus,
+      .my-button:focus {
+        box-shadow: 10px 10px 30px 3px rgba(0, 0, 0, 0.75);
+        transition: box-shadow 1s;
+      }
+    </style>
+  </body>
+</html>

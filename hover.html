@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover pseudo-class</title>
+  </head>
+  <body>
+    <a class="my-link" href="#">Link com Hover</a>
+    <input type="text" class="my-input" value="input com Hover" />
+    <button class="my-button">Button com Hover</button>
+    <style>
+      .my-link {
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+      .my-link:hover,
+      .my-input:hover,
+      .my-button:hover {
+        box-shadow: 10px 10px 30px 3px rgba(0, 0, 0, 0.75);
+        transition: box-shadow 1s;
+      }
+    </style>
+  </body>
+</html>
